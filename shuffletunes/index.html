@@ -1,0 +1,53 @@
+<!-----------------------------------------------------------
+/**
+// Author: Abbas Abdulmalik
+// Creation Date: Feb 9, 2015
+// Revised: Feb 28, 2015
+// Note: choose to randomly play mp3 files
+*/
+------------------------------------------------------------->
+<!doctype html>
+<html>
+<head>
+    <title>Shuffle Tunes</title>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1,
+        minimum-scale=1,
+        maximum-scale=1,
+        user-scalable=no"
+    > 
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/OSC.js"></script> 
+    <!--<script src="js/shuffle.js"></script>-->     
+</head>
+<body>
+    <div id="content">
+        <center><span id="filePlaying"> . . . </span></center>
+        <br>
+        <audio id="audioPlayer" controls autoplay ></audio>
+        <br>
+        <br>
+        <div id="shuffleBtn"></div><div id="nextSong">Next Song</div>
+        <br>
+        <br>
+         <select id="songSelection">
+              <option id="topChoice"><center>&dArr; CHOOSE A SONG &dArr;</center></option>         
+              <option value="marley">Could You Be Loved - Bob Marley</option>
+              <option value="shame">It's A Shame - Spinners</option>
+              <option value="venicequeen">Venice Queen - Chili Peppers</option>
+              <option value="trouble">Trouble - Ray LaMontagne</option>
+              <option value="gethealed">Did Ya' Get Healed? - Van Morrison</option>  
+              <option value="crazy">Crazy - Gnarls Barkley</option>
+              <option value="brickell">What I Am - New Bohemians</option>              
+              <option value="billyidol">Eyes Without A Face - Billy Idol</option>
+              <option value="wordup">Word Up! - Cameo</option>  
+              <option value="bjork">Venus As A Boy - Bjork</option>
+        </select>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
