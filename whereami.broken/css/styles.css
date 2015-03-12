@@ -1,0 +1,42 @@
+/**
+// Author: Abbas Abdulmalik
+// Creation Date: MArch 3, 2015
+// Revised: N/A
+// Note: Muntz minimally working geo maps
+// 
+*/ 
+body{
+    font-size: 4rem;
+    background: transparent; /*gray;*/
+    color: white;
+}
+#content{
+    position: absolute;
+    left: 0.25rem;
+}
+#geoInfo{
+    text-align: left;
+    font-weight: bold;
+    margin: 2% auto;
+}
+#btn{
+    background: url("../images/fingerprint.png") no-repeat center;
+    background-size: contain;
+    width: 100%;
+}
+.map{
+    position: absolute;
+    width: 88rem;
+    height: 70rem;
+    left: 1.1%;
+}
+
+
+#map{
+    visibility: visible;
+    opacity: 1;
+}
+#pam{
+    visibility: visible;
+    opacity: 1;
+}

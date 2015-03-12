@@ -1,0 +1,61 @@
+<body>
+<center>
+    <div id="results">
+    </div>
+    
+</center>
+</body>
+<script>
+var songsArray = ["song0","song1","song2","song3","song4","song5","song6","song7","song8","song9"];
+var pool = [];
+var randomIndex = 0;
+var currentSong;
+var firstSongFlag = true;
+
+////////////////////////////  show function //////////////////////////
+function show(aThing){
+    var aPlace = document.getElementById("results");
+    aPlace.innerHTML += aThing + "<br>";
+}
+///////////////////////////////////////////////////////////////////////
+function removeArrayMember(array, index){
+    if(index < array.length && array.length > 0){         
+        return removeMember(array, index);
+    }
+    else{
+        return false;  
+    }
+    //====== helper function ======
+    function removeMember(array, index){
+        for(var i=0; i< index ; i++){
+            var top = array.shift();
+            array.push(top);
+        }
+        return array.shift();
+    }
+    //=============================
+}
+////////////////////////////////////////////////////////
+
+pool = songsArray;
+randomIndex = Math.floor((pool.length)*Math.random());
+show("<b>" + pool.length + " songs" + ":</b> " + pool);
+show("<hr>");
+while(currentSong=removeArrayMember(pool, randomIndex)){
+    var songOrSongs = (pool.length == 1)?' song':' songs'
+    show("<b>" + pool.length + songOrSongs + " remaining: </b> " + pool + "&nbsp;&nbsp;&nbsp;&nbsp;Playing: " + currentSong);   
+    randomIndex = Math.floor((pool.length)*Math.random()); 
+}
+////////////////////////////// old code maybe reuse later ///////////
+/*  good code
+do{
+    show("<b>"+pool.length + " songs" +":</b> " + pool + ".&nbsp;&nbsp;&nbsp;&nbsp;Play song  :"+ pool[randomIndex]);   
+    removeArrayMember(pool,randomIndex);
+    randomIndex = Math.floor((pool.length)*Math.random());     
+}while ( pool.length > 0 )
+*/
+
+
+
+
+</script>

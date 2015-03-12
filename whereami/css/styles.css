@@ -1,0 +1,54 @@
+/**
+// Author: Abbas Abdulmalik
+// Creation Date: March 4, 2015
+// Revised: N/A
+// Note: best performance quest
+*/
+body{
+    font-size: 4rem;
+    background: transparent;
+    color: white;
+}
+#content{
+    padding: 2%;
+    min-height: 100%;
+}
+
+#geoInfo{
+    text-align: left;
+    font-weight: bold;
+}
+
+#btn{
+    background: hsla(26, 46%, 50%, 0.95);
+    width: 100%;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    cursor: pointer;
+    text-shadow: 0.25rem 0.25rem 0.25rem black;
+    margin: 0 auto;
+}
+
+#fingerprint{
+    position: absolute;
+    background: url("../images/fingerprint.png") no-repeat center;
+    background-size: contain;
+    width: 7.5%;
+    padding-bottom: 7.5%;
+    right: 15%;
+    top: 2%;
+}
+#maps{
+    position: relative;
+    bottom: 0;
+}
+
+.map{
+    position: absolute;
+    left: 5rem;
+    top: 2rem;
+    border: 1px solid black;
+    width: 89.5rem;
+    height: 60rem;
+}
